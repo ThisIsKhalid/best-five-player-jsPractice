@@ -4,9 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Top FIVE Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header w-auto h-96 flex items-center justify-center">
+        <h1 class="text-6xl text-white">Select Your <span class="font-semibold text-orange-500">Best FIVE</span> Player</h1>
+    </header>
+    <main>
+        <section class="container mx-auto mt-10">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="grid col-span-2 grid-cols-3 gap-2">
+                    <!-- card 1 -->
+                    <div class="card card-compact w-fit bg-white shadow-xl text-black">
+                        <img class="w-full" src="./images/mesi.png" alt="Mesi" />
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-medium">Lionel Messi</h2>
+                          <div class="text-center flex justify-center">
+                            <p>36 Goals</p>
+                            <p>120 assit</p>
+                          </div>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card card-compact w-fit bg-white shadow-xl text-black">
+                        <img class="w-full" src="./images/neimer.png" alt="Mesi" />
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-medium">Neymar Jr</h2>
+                          <div class="text-center flex justify-center">
+                            <p>36 Goals</p>
+                            <p>120 assit</p>
+                          </div>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card card-compact w-fit bg-white shadow-xl text-black">
+                        <img class="w-full" src="./images/mbampe.png" alt="Mesi" />
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-medium">Mbappé</h2>
+                          <div class="text-center flex justify-center">
+                            <p>36 Goals</p>
+                            <p>120 assit</p>
+                          </div>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="card card-compact w-fit bg-white shadow-xl text-black">
+                        <img class="w-full" src="./images/vitor.png" alt="Mesi" />
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-medium">Machado</h2>
+                          <div class="text-center flex justify-center">
+                            <p>36 Goals</p>
+                            <p>120 assit</p>
+                          </div>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="card card-compact w-fit bg-white shadow-xl text-black">
+                        <img class="w-full" src="./images/sergio.png" alt="Mesi" />
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-medium">Sergio Ramos</h2>
+                          <div class="text-center flex justify-center">
+                            <p>36 Goals</p>
+                            <p>120 assit</p>
+                          </div>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="card card-compact w-fit bg-white shadow-xl text-black">
+                        <img class="w-full" src="./images/renato.png" alt="Mesi" />
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-medium">Renato</h2>
+                          <div class="text-center flex justify-center">
+                            <p>36 Goals</p>
+                            <p>120 assit</p>
+                          </div>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ... -->
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-fuchsia-500 rounded-md text-black">
+                        <h2 class="text-2xl text-center font-medium">Selected Players:</h2>
+                        <hr class="border-black">
+                        <ol class="list-decimal">
+                            
+                        </ol>
+                    </div>
+                    <div class="bg-orange-400 rounded-md text-black">
+                        <h2 class="text-2xl text-center font-medium">Budget :</h2>
+                        <div class="flex justify-evenly items-center mt-4">
+                          <h3 class="text-lg font-medium">Per Player: </h3>
+                          <input type="text" placeholder="1000" class="input input-bordered w-1/2 max-w-xs text-white" />
+                        </div>
+                        <button class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-600 rounded-xl my-4 block mx-auto font-medium text-white text-xl">Calculate</button>
+                        <div class="flex justify-evenly items-center mt-4">
+                          <h3 class="text-lg font-medium">Player Expenses: </h3>
+                          <h3 class="text-lg font-medium">$<span>5000</span></h3>
+                        </div>
+                        <div class="flex justify-evenly items-center mt-4">
+                          <h3 class="text-lg font-medium">Manager: </h3>
+                          <input type="text" placeholder="2000" class="input input-bordered w-1/2 max-w-xs text-white" />
+                        </div>
+                        <div class="flex justify-evenly items-center mt-4">
+                          <h3 class="text-lg font-medium">Coach: </h3>
+                          <input type="text" placeholder="4000" class="input input-bordered w-1/2 max-w-xs text-white" />
+                        </div>
+                        <div class="flex justify-evenly items-center mt-4">
+                          <h3 class="text-lg font-medium">Total: </h3>
+                          <h3 class="text-lg font-medium text-red-600">$<span>11000</span></h3>
+                        </div>
+                        <button class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-600 rounded-xl my-4 block mx-auto font-medium text-white text-xl">Calculate Total</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
