@@ -25,7 +25,42 @@ function addPlayer(players){
 
 }
 
+function getInputValueById(inputId){
+    const inputValue = document.getElementById(inputId);
+    const inputValueString = inputValue.value;
+    const totalInputValue = parseFloat(inputValueString);
+    if(isNaN(totalInputValue)){
+        alert('Please enter a valid value!')
+    }
+    else {
+        return totalInputValue;
+    }
+}
+
+function getTextFieldById(textId){
+    const textField = document.getElementById(textId);
+    const textFieldString = textField.innerText;
+    const totalTextField = parseFloat(textFieldString);
+    return totalTextField;
+}
+
+function setTextFieldById(textId, value){
+    const textField = document.getElementById(textId); 
+    textField.innerText = value;
+}
+
+
 document.getElementById('calculate-btn').addEventListener('click', function(){
-    console.log(selectedPlayersArray.length);
-    console.log('click');
+    const playerNumber = selectedPlayersArray.length;
+    // const perPlayer = document.getElementById('per-player');
+    // const perPlayerString = perPlayer.value;
+    // const perPlayerTotal = parseFloat(perPlayerString);
+    const perPlayerTotal = getInputValueById('per-player');
+
+    const playersExpenses = playerNumber * perPlayerTotal;
+    setTextFieldById('players-expenses', playersExpenses);
+    console.log(playersExpenses);
+    
+    // const playerExpenses = getTextFieldById('player-expenses');
+
 })
