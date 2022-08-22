@@ -6,14 +6,23 @@ function addPlayer(players){
     // console.log(playerName);
     selectedPlayersArray.push(playerName);
 
-    const selectedPlayers = document.getElementById('selected-players');
-    const playerNameList = document.createElement('li');
-    playerNameList.innerText = playerName;
-    selectedPlayers.appendChild(playerNameList);
+    // const selectedPlayers = document.getElementById('selected-players');
+    // const playerNameList = document.createElement('li');
+    // playerNameList.innerText = playerName;
+    // selectedPlayers.appendChild(playerNameList);
 
+    if(selectedPlayersArray.length <= 5){
+        // alert('Limit Finish');
+        const selectedPlayers = document.getElementById('selected-players');
+        const playerNameList = document.createElement('li');
+        playerNameList.innerText = playerName;
+        selectedPlayers.appendChild(playerNameList);
+   }
+   else {
+        alert('Limit Finish');
+   }
    
-   
-   console.log(selectedPlayersArray);
+//    console.log(selectedPlayersArray);
     
 
     players.disabled = true;
