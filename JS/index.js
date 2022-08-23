@@ -38,11 +38,10 @@ function getTextFieldById(textId){
 }
 
 function setTextFieldById(textId, value){
-     
+    const textField = document.getElementById(textId);
     if(isNaN(value)){
     }
     else {
-        const textField = document.getElementById(textId);
         textField.innerText = value;
     }
 }
