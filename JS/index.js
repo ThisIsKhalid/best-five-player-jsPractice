@@ -19,7 +19,7 @@ function addPlayer(players){
         players.disabled = true;
    }
    else {
-        alert('Limit Finish');
+        alert('Limits Up');
         selectedPlayersArray.pop();
    }
 
@@ -45,8 +45,13 @@ function getTextFieldById(textId){
 }
 
 function setTextFieldById(textId, value){
-    const textField = document.getElementById(textId); 
-    textField.innerText = value;
+     
+    if(isNaN(value)){
+    }
+    else {
+        const textField = document.getElementById(textId);
+        textField.innerText = value;
+    }
 }
 
 
@@ -59,7 +64,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
 
     const playersExpenses = playerNumber * perPlayerTotal;
     setTextFieldById('players-expenses', playersExpenses);
-    // console.log(playersExpenses);
+    console.log(typeof playersExpenses);
     
     // const playerExpenses = getTextFieldById('player-expenses');
 
@@ -71,5 +76,5 @@ document.getElementById('total-calculate-btn').addEventListener('click', functio
     const coachSalary = getInputValueById('coach-salary');
 
     const totalExpenses = playerExpenses + manegerSalary + coachSalary;
-    setTextFieldById('total-calculate-btn', totalExpenses);
+    setTextFieldById('total-expenses', totalExpenses);
 })

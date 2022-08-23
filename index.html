@@ -15,8 +15,8 @@
     </header>
     <main>
         <section class="container mx-auto mt-10">
-            <div class="grid grid-cols-3 gap-4">
-                <div class="grid col-span-2 grid-cols-3 gap-2">
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="grid col-span-2 sm:grid-cols-2 md:grid-cols-3 gap-2">
                     <!-- card 1 -->
                     <div class="card card-compact w-fit bg-white shadow-xl text-black">
                         <img class="w-full" src="./images/mesi.png" alt="Mesi" />
@@ -132,7 +132,7 @@
                         </div>
                         <div class="flex justify-evenly items-center mt-4">
                           <h3 class="text-lg font-medium">Total: </h3>
-                          <h3 class="text-lg font-medium text-red-600">$<span>11000</span></h3>
+                          <h3 class="text-lg font-medium text-red-600">$<span id="total-expenses">11000</span></h3>
                         </div>
                         <button id="total-calculate-btn" class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-600 rounded-xl my-4 block mx-auto font-medium text-white text-xl">Calculate Total</button>
                     </div>
