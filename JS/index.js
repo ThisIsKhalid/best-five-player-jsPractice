@@ -59,8 +59,17 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
 
     const playersExpenses = playerNumber * perPlayerTotal;
     setTextFieldById('players-expenses', playersExpenses);
-    console.log(playersExpenses);
+    // console.log(playersExpenses);
     
     // const playerExpenses = getTextFieldById('player-expenses');
 
+})
+
+document.getElementById('total-calculate-btn').addEventListener('click', function(){
+    const playerExpenses = getTextFieldById('players-expenses');
+    const manegerSalary = getInputValueById('manager-salary');
+    const coachSalary = getInputValueById('coach-salary');
+
+    const totalExpenses = playerExpenses + manegerSalary + coachSalary;
+    setTextFieldById('total-calculate-btn', totalExpenses);
 })
